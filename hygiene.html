@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ChangXinFR.Models.ContentVM>
+@inject ChangXinFR.Services.ViewService VS
+
+@{
+    ViewData["Title"] = "Hygiène";
+    ViewData["PageID"] = "nos-expertises";
+}
+
+<section class="main alt">
+    <header>
+        <h1>@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Titre_1"))</h1>
+        <p>@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Sous_Titre_1"))</p>
+    </header>
+    <div class="inner">
+        <article class="post style2">
+            <div class="content">
+                <header>
+                    <span class="category">@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Sous_Titre_2"))</span>
+                    <h3>@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Titre_2"))</h3>
+                </header>
+                <p>
+                    @VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Description_2"))
+                </p>
+                <ul class="actions">
+                    <li><a href="#" class="button">En savoir plus</a></li>
+                </ul>
+            </div>
+            <div class="image" data-position="center"><img src="~/images/expertises/expertise-comptabilite-01.jpg" alt="" /></div>
+        </article>
+        <article class="post style2 alt">
+            <div class="content">
+                <header>
+                    <span class="category">@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Sous_Titre_3"))</span>
+                    <h3>@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Titre_3"))</h3>
+                </header>
+                <p>
+                    @VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Description_3"))
+                </p>
+                <ul class="actions">
+                    <li><a href="#" class="button">En savoir plus</a></li>
+                </ul>
+            </div>
+            <div class="image" data-position="center"><img src="~/images/expertises/expertise-comptabilite-02.jpg" alt="" /></div>
+        </article>
+        <article class="post style2">
+            <div class="content">
+                <header>
+                    <span class="category">@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Sous_Titre_4"))</span>
+                    <h3>@VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Titre_4"))</h3>
+                </header>
+                <p>
+                    @VS.GRC1(Model.FirstOrDefault(x => x.Key == "HYG_Description_4"))
+                </p>
+                <ul class="actions">
+                    <li><a href="#" class="button">En savoir plus</a></li>
+                </ul>
+            </div>
+            <div class="image" data-position="center"><img src="~/images/expertises/expertise-comptabilite-03.jpg" alt="" /></div>
+        </article>
+    </div>
+</section>
+<script src="~/js/js-changxin/logo-size.js"></script>

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <title>CHANGXIN - Comptabilité</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="icon" type="image/webp" href="images/util/favicons/favicon-2021-02-27.webp">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div class="logo">
+                    <a href="index.html"><img id="logo" class="logo brand bigOnDesktop" width="36%"
+                            src="images/util/logos/logo-2020-04-20-3.webp" /></a>
+                    <partial name="_CookieConsentPartial" />
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li id="accueil"><a href="index.html">Accueil</a></li>
+                        <li id="qui-sommes-nous"><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+                        <li id="nos-expertises">
+                            <a href="index.html#expertises" class="icon fa-angle-down">Nos expertises</a>
+                            <ul>
+                                <li>
+                                    <a href="comptabilite.html">+ Comptabilité</a>
+                                    <!-- <ul>
+                                        <li><a href="Finances.html">Finances</a></li>
+                                        <li><a href="Juridique.html">Juridique</a></li>
+                                        <li><a href="Social.html">Social</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="marketing.html">Marketing</a></li>
+                                <!-- <li><a href="Hygiene.html">Hygiène</a></li> -->
+                            </ul>
+                        </li>
+                        <li id="partenaires"><a href="partenaires.html">Nos partenaires</a></li>
+                        <li id="clients"><a href="clients.html">Nos clients</a></li>
+                        <li><a href="index.html#contact">Nous contacter</a></li>
+                        <partial name="_LoginPartial" />
+                        <!-- @*
+                                <li><a href="espace-client.html">Espace client</a></li>
+                                <li><a href="espace-prestataire.html">Espace prestataire</a></li>
+                            *@
+                            @*
+                                <li><a href="generic.html">Generic</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                            *@ -->
+                        <!-- <li><a id="french" asp-route-culture="fr"><img class="languages" width="20px" src="images/util/flags/french-flag.webp" /><span class="hideOnDesktop">Menu.Français</span></a></li>
+                            <li><a id="chinese" asp-route-culture="zh"><img class="languages" width="20px" src="images/util/flags/chinese-flag.webp" /><span class="hideOnDesktop">Menu.Chinois</span></a></li> -->
+                    </ul>
+                </nav>
+            </header>
+            <section class="main alt">
+                <header>
+                    <h1>LE PACK GESTION COMPTABLE</h1>
+                    <p>CHANGXIN vous apporte tout son savoir-faire dans la réalisation de ses missions comptables, juridiques et sociales.</p>
+                </header>
+                <div class="inner">
+                    <article class="post style2">
+                        <div class="content">
+                            <header>
+                                <span class="category">Comptabilité - Bilans</span>
+                                <h3>Nos missions comptables </h3>
+                            </header>
+                            <p>
+                                Changxin vous propose un Pack "Tout inclus" avec :<br /><br />1. La saisie comptable<br />2. L'établissement de vos comptes annuels<br />3. L'édition de la liasse fiscale<br />4. L'établissement des déclarations fiscales (TVA, CVAE, ...)<br /><br />Un point d'activité en milieu d'année et la présentation de vos comptes lors d'une réunion annuelle de bilan.
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Finances","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/expertises/expertise-comptabilite-01.webp" alt="" /></div>
+                    </article>
+                    <article class="post style2 alt">
+                        <div class="content">
+                            <header>
+                                <span class="category">Création de société - Juridique annuel - Litiges</span>
+                                <h3>Nos missions juridiques</h3>
+                            </header>
+                            <p>
+                                Changxin vous accompagne :<br /><br />À la création :<br />- Constitution d'entités juridiques<br />- Rédaction des statuts<br />- Formalités d'immatriculation<br /><br />À la clôture :<br />- Assemblées générales ordinaires (AGO)<br />- Rédaction du rapport de gestion<br />- Rédaction de l'Assemblée Générale Ordinaire<br />- Formalités liées à l'AG auprès des instances compétentes<br />- Mise à jour des registres obligatoires
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Juridique","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/expertises/expertise-comptabilite-02.webp" alt="" /></div>
+                    </article>
+                    <article class="post style2">
+                        <div class="content">
+                            <header>
+                                <span class="category">Paies - Embauches</span>
+                                <h3>Nos missions sociales</h3>
+                            </header>
+                            <p>
+                                Changxin réalise :<br /><br />Pour vos salariés :<br />- Établissement des bulletins de paie mensuel<br />- Forfait annuel - Déclarations sociales mensuelles<br />- Contrat de travail, Déclaration Unique d'Embauche (DUE)<br />- Déclaration annuel des salaires (DADS)<br />- Tenue des registres légaux en matière sociale<br />- Calcul des engagements de retraite (IFC)<br />- Tableaux récapitulatifs annuels<br /><br />Pour les Travailleurs Non Salariés (TNS) :<br />- Traitement annuel des TNS<br />- Échéancier prévisionnel des charges sociales TNS<br />- Déclaration sociale des indépendants (DSI)
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Social","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/expertises/expertise-comptabilite-03.webp" alt="" /></div>
+                    </article>
+                </div>
+            </section>
+            <script src="js/js-changxin/logo-size.js"></script>
+            <!-- <script src="assets/js/home-index.js"></script> -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon alt fa-weixin"><span class="label">WeChat</span></a></li>
+                    <li><a href="#" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
+                    <li><a href="#" class="icon alt fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">
+                    &copy; CHANGXIN Audits & Expertises. Tous droits réservés.<br />
+                    3 Rue de l'Arrivée - 75749 Paris Cedex 15<br />
+                    <a class="yellow" href="cgu.html">CGU</a>
+                </p>
+            </footer>
+        </div>
+        <script type="text/javascript">document.getElementById("accueil").classList.add("current");</script>
+        <script src="assets/js/logo-size.js"></script>
+    </body>
+</html>

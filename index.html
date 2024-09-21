@@ -1,0 +1,297 @@
+﻿<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <title>CHANGXIN - Accueil</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="icon" type="image/webp" href="images/util/favicons/favicon-2021-02-27.webp">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header" class="alt">
+                <div class="logo">
+                    <a href="index.html"><img id="logo" class="logo brand bigOnDesktop" width="36%" src="images/util/logos/logo-2020-04-20-3.webp" /></a>
+                    <partial name="_CookieConsentPartial" />
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li id="accueil"><a href="index.html">Accueil</a></li>
+                        <li id="qui-sommes-nous"><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+                        <li id="nos-expertises">
+                            <a href="index.html#expertises" class="icon fa-angle-down">Nos expertises</a>
+                            <ul>
+                                <li>
+                                    <a href="comptabilite.html">Comptabilité</a>
+                                    <!-- <ul>
+                                        <li><a href="Finances.html">Finances</a></li>
+                                        <li><a href="Juridique.html">Juridique</a></li>
+                                        <li><a href="Social.html">Social</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="marketing.html">Marketing</a></li>
+                                <!-- <li><a href="Hygiene.html">Hygiène</a></li> -->
+                            </ul>
+                        </li>
+                        <li id="partenaires"><a href="partenaires.html">Nos partenaires</a></li>
+                        <li id="clients"><a href="clients.html">Nos clients</a></li>
+                        <li><a href="index.html#contact">Nous contacter</a></li>
+                        <partial name="_LoginPartial" />
+                        <!-- @*
+                            <li><a href="espace-client.html">Espace client</a></li>
+                            <li><a href="espace-prestataire.html">Espace prestataire</a></li>
+                        *@
+                        @*
+                            <li><a href="generic.html">Generic</a></li>
+                            <li><a href="elements.html">Elements</a></li>
+                        *@ -->
+                        <!-- <li><a id="french" asp-route-culture="fr"><img class="languages" width="20px" src="images/util/flags/french-flag.webp" /><span class="hideOnDesktop">Menu.Français</span></a></li>
+                        <li><a id="chinese" asp-route-culture="zh"><img class="languages" width="20px" src="images/util/flags/chinese-flag.webp" /><span class="hideOnDesktop">Menu.Chinois</span></a></li> -->
+                    </ul>
+                </nav>
+            </header>
+            <!-- Bannière -->
+            <section id="banner" class="zIndex1 thumbnailSection">
+                <div class="content titleBox">
+                    <h1 class="title1">CHANGXIN AUDITS & EXPERTISES</h1>
+                    <h1 class="title2" style="color: rgb(238, 185, 39); font-size: 2em !important; font-weight: bold; --darkreader-inline-color: #d7bf7c;">Développez votre activité en toute sérénité</h1>
+                </div>
+                <a href="#expertises" class="more scrolly">@VS.GRC2(Model.FirstOrDefault(x => x.Key == "IND-Bouton-Suite"), "a")</a>
+            </section>
+            <!-- Expertises -->
+            <section class="main alt zIndex2 thumbnailSection" id="expertises">
+                <header>
+                    <h2>Bénéficiez de nos Packs d'expertise</h2>
+                    <p>CHANGXIN réunit des experts dans 3 domaines clés : la gestion comptable, le marketing et l'immobilier Pro. Ils vous accompagnent tout au long de votre activité, qu'elle soit en phase de démarrage ou déjà bien installée.</p>
+                </header>
+                <div class="inner">
+                    <article class="post style2">
+                        <div class="content">
+                            <header>
+                                <h3>1. Le pack Gestion comptable</h3>
+                                <span class="category">Nos missions comptables - juridiques - sociales</span>
+                            </header>
+                            <p>
+                                <span style="" id="IND_3_Description">Grâce à la compétence et la réactivité de nos experts, CHANGXIN vous accompagnent dans la gestion au quotidien de votre activité à l'aide d'outils de pilotage intuitifs et pertinents.</span>
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Comptabilite","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/expertises/expertise-comptabilite-01.webp" alt="" /></div>
+                    </article>
+                    <article class="post style2 alt">
+                        <div class="content">
+                            <header>
+                                <h3>2. Le pack Marketing</h3>
+                                <span class="category">Communication Web - Fidélisation - Click & Collect</span>
+                            </header>
+                            <p>
+                                <span style="" id="IND_4_Description">Notre équipe maitrise toutes les clés du marketing pour valoriser votre savoir-faire et la qualité de vos services. 
+                                    <br><br>Développez votre activité grâce à une communication digitale créative et le déploiement d'outils efficaces tels que les campagnes de fidélisation ou encore le Click &amp; Collect.</span>
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Marketing","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/pic02.webp" alt="" /></div>
+                    </article>
+                    <article class="post style2">
+                        <div class="content">
+                            <header>
+                                <h3>3. LE PACK IMMOBILIER PRO</h3>
+                                <span class="category">Courtier en crédit Pro - Agent Immo Pro</span>
+                            </header>
+                            <p>
+                                <span style="" id="IND_5_Description">L’équipe de Changxin et son réseau d’experts du domaine de l’immobilier professionnel, sélectionnent pour vous des biens d'exception : locaux et bureaux selon vos critères de recherche.
+                                <br><br>Grâce à notre parfaite connaissance du marché et à notre relation de proximité avec les différents promoteurs et bailleurs, nous sommes informés en priorité des emplacements numéro 1 avant même d’être mis sur le marché.
+                                <br><br>Nous vous proposons également un service d’accompagnement financier de votre projet jusqu’à l’obtention d’un crédit bancaire avec nos experts courtiers pro.</span>
+                            </p>
+                            <!-- <ul class="actions">
+                                <li><a href="@Url.Action("Hygiene","Home")" class="button">En savoir plus</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="image" data-position="center"><img src="images/pic03.webp" alt="" /></div>
+                    </article>
+                </div>
+            </section>
+            <!-- Clients -->
+            <section class="main alt zIndex3 thumbnailSection">
+                <header>
+                    <h2>Notre proposition de valeur</h2>
+                    <p>Changxin concentre un grand nombre d'expériences et de compétences. Accédez via un "guichet unique" à nos 3 packs "Tout compris" pour démarrer / développer vos projets et atteindre chacun de vos objectifs.</p>
+                </header>
+                <div class="inner">
+                    <article class="post alt">
+                        <div class="content">
+                            <header>
+                                <span class="category">L'humain au coeur de nos services</span>
+                                <h3>Un accompagnement de proximité</h3>
+                            </header>
+                            <p>
+                                Nos experts vous accompagnent au quotidien dans vos projets afin de faire fructifier au maximum vos restaurants. Nous vous aidons à atteindre vos objectifs : augmenter la rentabilité, fidéliser votre clientèle, faire connaître votre restaurant...Investir dans d'autres projets !
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img src="images/pic04.webp" alt="" /></div>
+                    </article>
+                    <article class="post">
+                        <div class="content">
+                            <header>
+                                <span class="category">Le numérique au service de votre activité</span>
+                                <h3>Une sélection d'outils numériques pour piloter et booster votre activité</h3>
+                            </header>
+                            <p>
+                                Chacun des 3 packs intègrent des applications web pour gagner du temps et vous concentrer sur votre coeur de métier : la restauration.
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img src="images/pic05.webp" alt="" /></div>
+                    </article>
+                    <article class="post alt">
+                        <div class="content">
+                            <header>
+                                <span class="category">Gagner ensemble</span>
+                                <h3>Une assistance de tous les instants</h3>
+                            </header>
+                            <p>
+                                Nous accompagnons au plus près tous nos clients notamment pendant les périodes difficiles comme celle du COVID-19 afin d'accélérer par exemple les démarches d'obtention des aides financières proposées par le gouvernement.
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img src="images/pic06.webp" alt="" /></div>
+                    </article>
+                    <!-- <center>
+                        <ul class="actions">
+                            <li><a href="clients.html" class="button">@VS.GRC2(Model.FirstOrDefault(x => x.Key == "IND-Temoignage-Bouton"), "a")</a></li>
+                        </ul>
+                    </center> -->
+                </div>
+            </section>
+            <!-- Comment ça marche -->
+            <!--  -->
+            <!-- Partenaires -->
+            <section class="main darkgray zIndex5 thumbnailSection">
+                <header>
+                    <h2>Nos partenaires</h2>
+                    <p>Nos partenaires nous aident pour vous offrir les meilleurs services.</p>
+                </header>
+                <div class="inner">
+                    <article class="post alt">
+                        <div class="content">
+                            <header>
+                                <span class="category">Compétence - Confiance</span>
+                                <h3>STECO - Expertise comptable</h3>
+                            </header>
+                            <p>
+                                <span style="" id="PAR_2_Description">Avec plus de 2 900 clients composés d'un grand nombre de commerçants, STECO est devenu depuis sa création en 1958, un cabinet reconnu dans l'expertise comptable et le conseil en entreprise.
+                                <br>
+                                <br>STECO est inscrit à l’Ordre des Experts-Comptables de la région de Poitou-Charentes-Vendée.
+                                <br>
+                                <br>Il est également membre indépendant du groupement de cabinets d’expertise comptable et de commissariat aux comptes AUDECIA.</span>
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img class="partner" src="images/partenaires/partenaire-05.webp" alt="" /></div>
+                    </article>
+                    <article class="post">
+                        <div class="content">
+                            <header>
+                                <span class="category">Le spécialiste innovant du Click & Collect pour les restaurateurs</span>
+                                <h3>SIOUPLAIT</h3>
+                            </header>
+                            <p>
+                                <span style="" id="PAR_3_Description">Siouplaît : le click and collect pour la restauration
+                                <br>
+                                <br>Siouplaît est un nouveau service de click and collect dédié à la restauration, la vente à emporter, la street food et l’événementiel. Grande tendance de l’année 2019, le click and collect permet à la clientèle de précommander et de payer leur repas et de recevoir un texto dès que leur commande est prête, sans avoir à faire la queue.
+                                <br>Avec notre partenaire Siouplait, nous mettons en place rapidement votre solution de click and collect. 
+                                <br>A vous de choisir :
+                                <br>- Les jours, lieu et horaire de retrait de la commande,
+                                <br>- Les produits et leurs prix,
+                                <br>- Et les différents moyens de paiement disponibles.
+                                <br></span>
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img class="partner" src="images/partenaires/partenaire-06.webp" alt="" /></div>
+                    </article>
+                    <article class="post alt">
+                        <div class="content">
+                            <header>
+                                <span class="category">Le programme de fidélité réinventé : Transformez vos clients occasionnels en clients fidèles</span>
+                                <h3>PONGO</h3>
+                            </header>
+                            <p>
+                                <span style="" id="PAR_4_Description">Pongo offre un outil marketing simple et limpide permettant aux commerçants physiques d’optimiser leur stratégie marketing. Création de base de données clients, création d’un programme de fidélité et marketing automatisé : Pongo accompagne efficacement les PME sans département marketing, leur évitant de perdre du temps sur l’ensemble de ces tâches généralement très chronophages.
+                                <br><br>Grâce à l'expertise de notre partenaire PONGO, bénéficiez enfin d'un programme de fidélité rentable, simple et ludique.
+                                <br><br>Débarrassez-vous de vos cartes à tampons !
+                                <br><br>Elles ralentissent le flux, et vos clients la perdent ou l'oublient. Proposez une expérience que vos clients vont adorer.
+                                <br><br>Offrez à vos clients une expérience aussi unique que votre restaurant.
+                                <br><br>Fini le café au bout du 10ème passage, proposez des récompenses qui vous ressemblent, et faites revenir vos clients à chaque fois avec encore plus de surprises.</span>
+                            </p>
+                        </div>
+                        <div class="image" data-position="center"><img class="partner" src="images/partenaires/partenaire-07.webp" alt="" /></div>
+                    </article>
+                    <center>
+                        <ul class="actions">
+                            <li><a href="partenaires.html" class="button">Voir nos autres partenaires</a></li>
+                        </ul>
+                    </center>
+                </div>
+            </section>
+            <!-- Contact -->
+            <!-- <section id="contact" class="main alt special zIndex6 thumbnailSection">
+                <header>
+                    <h2>NOUS CONTACTER</h2>
+                    <p>
+                        <span style="" id="IND_12_Description">Toutes vos données sont protégées par le <a class="yellow" href="https://web.archive.org/web/20240719001824/https://changxin.fr/Home/CGU#rgpd" target="blank">RGPD</a>.<br>
+                            Notre équipe prendra rapidement contact avec vous.</span>
+                    </p>
+                </header>
+                <div class="inner narrow">
+                    <form action="#" method="post">
+                        <div class="field half">
+                            <input name="name" id="name" placeholder="Nom" type="text" />
+                        </div>
+                        <div class="field half">
+                            <input name="firstname" id="firstname" placeholder="Prénom" type="text" />
+                        </div>
+                        <div class="field half">
+                            <input name="phone" id="phone" placeholder="Téléphone" type="text" />
+                        </div>
+                        <div class="field half">
+                            <input name="mail" id="mail" placeholder="Mail" type="email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        <ul class="actions">
+                            <li><button class="button" type="submit">Envoyer</button></li>
+                        </ul>
+                    </form>
+                </div>
+            </section> -->
+            <!-- <script src="assets/js/home-index.js"></script> -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon alt fa-weixin"><span class="label">WeChat</span></a></li>
+                    <li><a href="#" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
+                    <li><a href="#" class="icon alt fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">
+                    &copy; CHANGXIN Audits & Expertises. Tous droits réservés.<br />
+                    3 Rue de l'Arrivée - 75749 Paris Cedex 15<br />
+                    <a class="yellow" href="cgu.html">CGU</a>
+                </p>
+            </footer>
+        </div>
+        <script type="text/javascript">document.getElementById("accueil").classList.add("current");</script>
+        <script src="assets/js/logo-size.js"></script>
+    </body>
+</html>
